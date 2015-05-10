@@ -1,36 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DungeonOfZurasha.Dungeon
 {
-
-    private enum ClassType {
-        Warrior, 
-        Wizard,
-        Rogue,
-        //TODO: Come up with more possible classes if desired, maybe unique enemy class type?
-    }
-
-    private enum Race
+    public abstract class Character
     {
-        Human, 
-        Orc, 
-        Imp,
-        Dwarf,
-        Elf
-    }
-
-    public class Ability 
-    {
-        public string Name { get; set; }
-    }
-
-    protected sealed class Character
-    {
-        public Character()
+        protected Character()
         {
             Experience = 0;
         }
@@ -51,7 +26,10 @@ namespace DungeonOfZurasha.Dungeon
             {
                 return Agility * 2;
             }
-            private set;
+            private set
+            {
+                
+            }
         }
 
         public int Defense
@@ -60,7 +38,10 @@ namespace DungeonOfZurasha.Dungeon
             {
                 return Agility + Strength;
             }
-            private set;
+            private set
+            {
+                
+            }
         }
 
         public int Level { get; set; }
@@ -73,41 +54,5 @@ namespace DungeonOfZurasha.Dungeon
 
         public Position Position { get; set; }
         public ICollection<Ability> Abilities {get;set;}
-    }
-
-    public class PlayerCharacter : Character
-    {
-        public Inventory Inventory { get; set; }
-    }
-
-    public class NonPlayerCharacter : Character 
-    {
-        //Maybe we'll spawn monsters with special items on them so they drop and can be looted?
-        public ICollection<Item> Items { get; set; }
-    }
-
-    public class Item
-    {
-        public string Name { get; set; }
-
-        public int Strength { get; set; }
-        public int Agility { get; set; }
-        public int Intelligence { get; set; }
-
-        public int Damage { get; set; }
-        public int Dodge { get; set; }
-
-        public int Weight { get; set; }
-    }
-
-    public class Inventory
-    {
-        public ICollection<Item> Items { get; set; }
-    }
-
-    public class Position
-    {
-        public int X { get; set; }
-        public int Y { get; set; }
     }
 }

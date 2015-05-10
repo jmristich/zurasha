@@ -44,8 +44,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dungeon\Ability.cs" />
+    <Compile Include="Dungeon\Boss.cs" />
     <Compile Include="Dungeon\Character.cs" />
+    <Compile Include="Dungeon\ClassType.cs" />
     <Compile Include="Dungeon\Dungeon.cs" />
+    <Compile Include="Dungeon\Enemy.cs" />
+    <Compile Include="Dungeon\Inventory.cs" />
+    <Compile Include="Dungeon\Item.cs" />
+    <Compile Include="Dungeon\Level.cs" />
+    <Compile Include="Dungeon\NonPlayerCharacter.cs" />
+    <Compile Include="Dungeon\PlayerCharacter.cs" />
+    <Compile Include="Dungeon\Position.cs" />
+    <Compile Include="Dungeon\Race.cs" />
+    <Compile Include="Dungeon\Tile.cs" />
+    <Compile Include="Dungeon\Merchant.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

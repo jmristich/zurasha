@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace DungeonOfZurasha.Dungeon
 {
-    class Dungeon
+    public class Dungeon
     {
+        //Main dungeon class for the game. Dungeon should have a reference to the player character?
+        public PlayerCharacter Player { get; set; }
+        public ICollection<Level> Levels { get; set; }
     }
 }
