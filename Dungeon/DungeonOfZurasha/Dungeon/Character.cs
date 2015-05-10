@@ -7,7 +7,7 @@ namespace DungeonOfZurasha.Dungeon
     {
         protected Character()
         {
-            Experience = 0;
+            Abilities = new List<Ability>();
         }
 
         public string Name { get; set; }
@@ -45,9 +45,6 @@ namespace DungeonOfZurasha.Dungeon
         }
 
         public int Level { get; set; }
-
-        //Making this a huge number to account for possible experience gains rising exponentially. This should probably never be below 0 either.
-        public UInt32 Experience { get; set; }
 
         public Race Race { get; set; }
         public ClassType Type { get; set; }
