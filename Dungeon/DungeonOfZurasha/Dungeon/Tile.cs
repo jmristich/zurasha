@@ -4,7 +4,11 @@ namespace DungeonOfZurasha.Dungeon
 {
     public enum TileType
     {
-        
+        DebugWall,
+        MapBorder,
+        RockWall,
+        RoomFloor,
+        HallFloor,
     }
 
     public class Tile
@@ -31,5 +35,8 @@ namespace DungeonOfZurasha.Dungeon
 
         public TileType Type { get; set; }
         public Position Position { get; set; }
+
+        //hardness will be used for dijkstras to calculate monster movements
+        public int Hardness { get; set; }
     }
 }
