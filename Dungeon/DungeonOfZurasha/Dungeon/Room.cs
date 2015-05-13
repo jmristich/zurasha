@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DungeonOfZurasha.Dungeon
 {
-    class Room
+    public class Room
     {
         public Room()
         {

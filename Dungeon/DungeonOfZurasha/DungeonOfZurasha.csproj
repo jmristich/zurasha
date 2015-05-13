@@ -58,6 +58,7 @@
     <Compile Include="Dungeon\PlayerCharacter.cs" />
     <Compile Include="Dungeon\Position.cs" />
     <Compile Include="Dungeon\Race.cs" />
+    <Compile Include="Dungeon\Room.cs" />
     <Compile Include="Dungeon\Tile.cs" />
     <Compile Include="Dungeon\Merchant.cs" />
     <Compile Include="Form1.cs">
